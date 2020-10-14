@@ -1,1 +1,2 @@
-An opinionated starter for using Gatsby v2 with React Context, tag-agnostic styled-components, page transitions and scroll events with IntersectionObserver.
+Hello! I'm Chrystal. I'm a Frontend Web Developer. I write beautiful code. I learn new stuff everyday. And I love what I do. 
+

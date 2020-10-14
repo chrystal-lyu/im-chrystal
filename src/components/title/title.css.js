@@ -1,8 +1,15 @@
 import styled from 'styled-components';
 import MEDIA from 'helpers/mediaTemplates';
+import { accent } from '../../constants/theme';
 
 export const Text = styled.span`
   display: block;
+  color: ${({ theme }) => {
+    switch (theme) {
+      case 'primary':
+        return accent;
+    }
+  }};
   font-weight: ${({ size }) => () => {
     switch (size) {
       case 'large':
