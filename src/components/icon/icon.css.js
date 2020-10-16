@@ -8,5 +8,5 @@ export const Container = styled.div`
 
 export const Item = styled.a`
   margin: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 `;
