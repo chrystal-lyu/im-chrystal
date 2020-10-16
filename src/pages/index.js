@@ -5,7 +5,7 @@ import Box from 'components/box';
 import Title from 'components/title';
 import Button from 'components/button';
 import Gallery from 'components/gallery';
-import IOExample from 'components/io-example';
+import Footer from 'components/footer';
 import { graphql, Link } from 'gatsby';
 
 const Index = ({ data }) => (
@@ -18,9 +18,13 @@ const Index = ({ data }) => (
         <Link to="/about">More About Me</Link>
       </Button>
     </Box>
+    <Box>
+      <Title as="h3" size="medium">
+        Recent Projects
+      </Title>
+    </Box>
     <Gallery items={data.homeJson.gallery} />
-    <div style={{ height: '50vh' }} />
-    <IOExample />
+    <Footer />
   </Layout>
 );
 
