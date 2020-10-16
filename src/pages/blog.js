@@ -29,7 +29,13 @@ export default Blog;
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      filter: {
+        fields: { slug: { ne: "/README/" } }
+        fileAbsolutePath: { regex: "/blog/" }
+      }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
       nodes {
         excerpt
         fields {
