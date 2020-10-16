@@ -1,4 +1,4 @@
-Find the repository [on GitHub](https://github.com/fabe/gatsby-universal).
+Find this website repo [on GitHub](https://github.com/chrystal-lyu/im-chrystal).
 
 ```
 # Installation
