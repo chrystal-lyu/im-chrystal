@@ -5,13 +5,14 @@ import Head from 'components/head';
 import Header from 'components/header';
 import Footer from 'components/footer';
 import GlobalStyle from 'global.css.js';
+import { Container } from './layout.css';
 
 const Layout = ({ data, children }) => (
   <div>
     <GlobalStyle />
     <Head />
     <Header title={data.site.siteMetadata.siteTitle} />
-    {children}
+    <Container>{children}</Container>
     <Footer />
   </div>
 );
