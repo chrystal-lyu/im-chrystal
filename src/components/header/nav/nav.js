@@ -10,6 +10,9 @@ const Nav = () => (
         <Link to="/about">Projects</Link>
       </li>
       <li>
+        <Link to="/blog">Blog</Link>
+      </li>
+      <li>
         <Link to="/about">About</Link>
       </li>
       <li>
@@ -20,9 +23,6 @@ const Nav = () => (
         >
           Resume
         </a>
-      </li>
-      <li>
-        <a href="https://github.com/chrystal-lyu">GitHub</a>
       </li>
     </ul>
   </Container>
