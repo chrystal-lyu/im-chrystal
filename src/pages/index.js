@@ -5,7 +5,6 @@ import Box from 'components/box';
 import Title from 'components/title';
 import Button from 'components/button';
 import Gallery from 'components/gallery';
-import Footer from 'components/footer';
 import { graphql, Link } from 'gatsby';
 
 const Index = ({ data }) => (
@@ -24,7 +23,6 @@ const Index = ({ data }) => (
       </Title>
     </Box>
     <Gallery items={data.homeJson.gallery} />
-    <Footer />
   </Layout>
 );
 
