@@ -3,7 +3,7 @@ import { accent } from 'constants/theme';
 
 export default createGlobalStyle`
   html, body, div, span, applet, object, iframe,
-  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
   del, dfn, em, img, ins, kbd, q, s, samp,
   small, strike, strong, sub, sup, tt, var,
@@ -16,10 +16,8 @@ export default createGlobalStyle`
   menu, nav, output, ruby, section, summary,
   time, mark, audio, video {
     margin: 0;
-    padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
   }
 
@@ -37,7 +35,7 @@ export default createGlobalStyle`
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     line-height: 1;
     font-size: 1.6rem;
-    color: #000;
+    color: #343a40;
     background-color: #fff;
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
@@ -48,8 +46,9 @@ export default createGlobalStyle`
     font-variant-numeric: proportional-nums;
   }
 
-  ol, ul {
-    list-style: none;
+  blockquote {
+    border-left: 4px solid ${accent};
+    padding: 0 0 0 1.5rem;
   }
 
   blockquote, q {
@@ -73,10 +72,10 @@ export default createGlobalStyle`
 
   pre {
     display: block;
-    padding: 2rem;
-    margin-top: 4rem;
+    padding: 1.5rem;
+    margin-top: 3rem;
     overflow: auto;
-    font-size: 85%;
+    font-size: 100%;
     line-height: 1.45;
     border-radius: 5px;
     color: ${accent};
@@ -88,7 +87,32 @@ export default createGlobalStyle`
     max-width: 100%;
   }
 
-  p {
-    margin-bottom: 2rem;
+  h1 {
+    font-size: 2.488rem;
+  } 
+
+  h2 {
+    font-size: 2.074rem;
+  }
+
+  h3{
+    font-size: 1.728rem;
+  }
+
+  h4 {
+    font-size: 1.44rem;
+  }
+  
+  h5  {
+    font-size: 1.2rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+  }
+
+  p, ol, ul, pre, table {
+    margin-bottom: 3rem;
+    line-height: 2rem;
   }
 `;

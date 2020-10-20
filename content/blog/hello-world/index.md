@@ -6,6 +6,8 @@ description: "Hello World"
 
 This is my first post on my new fake blog! How exciting!
 
+Find this website repo [on GitHub](https://github.com/chrystal-lyu/im-chrystal).
+
 I'm sure I'll write a lot more interesting things in the future.
 
 Oh, and here's a great quote from this Wikipedia on
