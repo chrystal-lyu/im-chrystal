@@ -3,7 +3,7 @@ import { accent } from 'constants/theme';
 
 export default createGlobalStyle`
   html, body, div, span, applet, object, iframe,
-  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
   del, dfn, em, img, ins, kbd, q, s, samp,
   small, strike, strong, sub, sup, tt, var,
@@ -51,6 +51,10 @@ export default createGlobalStyle`
   ol, ul {
     list-style: none;
   }
+  blockquote {
+    border-left: 4px solid ${accent};
+    padding: 0 0 0 1.5rem;
+  }
 
   blockquote, q {
     quotes: none;
@@ -73,8 +77,8 @@ export default createGlobalStyle`
 
   pre {
     display: block;
-    padding: 2rem;
-    margin-top: 4rem;
+    padding: 1.5rem;
+    margin-top: 3rem;
     overflow: auto;
     font-size: 85%;
     line-height: 1.45;
@@ -88,7 +92,32 @@ export default createGlobalStyle`
     max-width: 100%;
   }
 
-  p {
-    margin-bottom: 2rem;
+  h1 {
+    font-size: 2.488rem;
+  } 
+
+  h2 {
+    font-size: 2.074rem;
+  }
+
+  h3{
+    font-size: 1.728rem;
+  }
+
+  h4 {
+    font-size: 1.44rem;
+  }
+  
+  h5  {
+    font-size: 1.2rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+  }
+
+  p, ol, ul, pre, table {
+    margin-bottom: 3rem;
+    line-height: 2rem;
   }
 `;

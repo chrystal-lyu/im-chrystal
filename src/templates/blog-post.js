@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 import Box from 'components/box';
+import Title from 'components/title';
 
 const BlogPostTemplate = ({ data }) => {
   const post = data.markdownRemark;
@@ -17,7 +18,9 @@ const BlogPostTemplate = ({ data }) => {
           itemType="http://schema.org/Article"
         >
           <header>
-            <h1 itemProp="headline">{post.frontmatter.title}</h1>
+            <Title as="h3" size="medium">
+              {post.frontmatter.title}
+            </Title>
             <p>{post.frontmatter.date}</p>
           </header>
           <section
