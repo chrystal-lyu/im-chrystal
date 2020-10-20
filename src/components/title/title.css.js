@@ -3,6 +3,8 @@ import MEDIA from 'helpers/mediaTemplates';
 import { accent } from '../../constants/theme';
 
 export const Text = styled.span`
+  margin-top: 0;
+  margin-bottom: 0;
   display: block;
   color: ${({ theme }) => {
     switch (theme) {
