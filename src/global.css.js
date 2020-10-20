@@ -16,10 +16,8 @@ export default createGlobalStyle`
   menu, nav, output, ruby, section, summary,
   time, mark, audio, video {
     margin: 0;
-    padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
   }
 
@@ -49,7 +47,7 @@ export default createGlobalStyle`
   }
 
   ol, ul {
-    list-style: none;
+    /* list-style: none; */
   }
   blockquote {
     border-left: 4px solid ${accent};
@@ -80,7 +78,7 @@ export default createGlobalStyle`
     padding: 1.5rem;
     margin-top: 3rem;
     overflow: auto;
-    font-size: 85%;
+    font-size: 100%;
     line-height: 1.45;
     border-radius: 5px;
     color: ${accent};
