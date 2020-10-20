@@ -35,7 +35,7 @@ export default createGlobalStyle`
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     line-height: 1;
     font-size: 1.6rem;
-    color: #000;
+    color: #343a40;
     background-color: #fff;
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
@@ -46,9 +46,6 @@ export default createGlobalStyle`
     font-variant-numeric: proportional-nums;
   }
 
-  ol, ul {
-    /* list-style: none; */
-  }
   blockquote {
     border-left: 4px solid ${accent};
     padding: 0 0 0 1.5rem;
