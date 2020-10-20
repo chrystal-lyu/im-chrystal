@@ -6,7 +6,9 @@ const Footer = () => (
   <Container>
     <Icon />
     <div>
-      © 2020, Built with <a href="https://www.gatsbyjs.org/">Gatsby</a>
+      © {new Date().getFullYear()}, Built with{' '}
+      <a href="https://www.gatsbyjs.org/">Gatsby</a> Hosted with{' '}
+      <a href="https://www.netlify.com/">Netlify</a>
     </div>
   </Container>
 );
