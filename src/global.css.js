@@ -112,7 +112,7 @@ export default createGlobalStyle`
   }
 
   p, ol, ul, pre, table {
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     line-height: 2rem;
   }
 `;

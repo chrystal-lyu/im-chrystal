@@ -7,6 +7,7 @@ export const Container = styled.div`
   img {
     border-radius: 8px;
     overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.15);
   }
   figcaption {
     text-align: center;
