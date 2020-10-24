@@ -3,6 +3,17 @@ import styled from 'styled-components';
 export const Container = styled.div`
   padding: 2rem 4rem;
   max-width: 700px;
+
+  img {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  figcaption {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 0.625rem;
+    color: #777;
+  }
 `;
 
 export const ContainerWithBorder = styled.div`
