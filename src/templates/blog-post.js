@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 import Box from 'components/box';
-import Title from 'components/title';
+import PostHeader from 'components/post-header';
 
 const BlogPostTemplate = ({ data }) => {
   const post = data.markdownRemark;
@@ -17,12 +17,10 @@ const BlogPostTemplate = ({ data }) => {
           itemScope
           itemType="http://schema.org/Article"
         >
-          <header>
-            <Title as="h3" size="medium">
-              {post.frontmatter.title}
-            </Title>
-            <p>{post.frontmatter.date}</p>
-          </header>
+          <PostHeader
+            title={post.frontmatter.title}
+            date={post.frontmatter.date}
+          />
           <section
             dangerouslySetInnerHTML={{ __html: post.html }}
             itemProp="articleBody"
