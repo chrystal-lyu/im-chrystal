@@ -1,6 +1,7 @@
 ---
 title: Kala Search Official Website
 date: "2020-08-17"
+featureImage: "./kala-search-website-home.png"
 description: "Kala Search Official Website"
 ---
 
