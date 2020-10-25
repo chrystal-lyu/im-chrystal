@@ -12,7 +12,9 @@ import {
 const Post = ({ children }) => (
   <Container>
     {children.map(node => {
-      const featureImg = node.frontmatter.featureImage.childImageSharp.fluid;
+      const featureImg = node.frontmatter.featureImage
+        ? node.frontmatter.featureImage.childImageSharp.fluid
+        : null;
       return (
         <Item key={node.fields.slug} href={node.fields.slug}>
           <ImageContainer>

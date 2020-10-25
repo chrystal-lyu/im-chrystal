@@ -22,7 +22,7 @@ const Index = ({ data }) => (
         Recent Projects
       </Title>
     </Box>
-    <Gallery items={data.homeJson.gallery} />
+    <Gallery items={data.allMarkdownRemark.edges} />
   </Layout>
 );
 
@@ -42,14 +42,33 @@ export const query = graphql`
           rawMarkdownBody
         }
       }
-      gallery {
-        title
-        copy
-        image {
-          childImageSharp {
-            fluid(maxHeight: 500, quality: 90) {
-              ...GatsbyImageSharpFluid_withWebp
+    }
+    allMarkdownRemark(
+      limit: 3
+      filter: {
+        fields: { slug: { ne: "/README/" } }
+        fileAbsolutePath: { regex: "/project/" }
+      }
+      sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
+      edges {
+        node {
+          excerpt
+          frontmatter {
+            title
+            featureImage {
+              childImageSharp {
+                resolutions {
+                  src
+                }
+                fluid(maxWidth: 800, quality: 100) {
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
+                }
+              }
             }
+          }
+          fields {
+            slug
           }
         }
       }
