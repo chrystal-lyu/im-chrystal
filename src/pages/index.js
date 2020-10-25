@@ -13,9 +13,9 @@ const Index = ({ data }) => (
       <Title as="h2" size="large">
         {data.homeJson.content.childMarkdownRemark.rawMarkdownBody}
       </Title>
-      <Button>
-        <Link to="/about">More About Me</Link>
-      </Button>
+      <Link to="/about">
+        <Button>More About Me</Button>
+      </Link>
     </Box>
     <Box>
       <Title as="h3" size="medium">
