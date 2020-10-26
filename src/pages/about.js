@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import Layout from 'components/layout';
 import Box from 'components/box';
 import Head from 'components/head';
+import Button from 'components/button';
 import { ContainerWithBorder } from 'components/box/box.css';
 
 const About = ({ data }) => (
@@ -22,6 +23,9 @@ const About = ({ data }) => (
           __html: data.aboutJson.content.childMarkdownRemark.html,
         }}
       />
+      <Link to="/project">
+        <Button>Browse My Work</Button>
+      </Link>
     </Box>
   </Layout>
 );

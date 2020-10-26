@@ -1,11 +1,12 @@
 import styled from 'styled-components';
+import { accent } from '../../constants/theme';
 
 export const Button = styled.button`
   -webkit-appearance: none;
   background-color: #fff;
   border-radius: 5px;
   border: none;
-  color: #757575;
+  color: ${accent};
   border: 1px solid #ddd;
   cursor: pointer;
   font-family: inherit;
