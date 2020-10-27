@@ -1,23 +1,28 @@
 ---
 title: Kala Search Demo Site
-date: "2020-09-17"
+date: "2020-10-01"
 featureImage: "./kala-search-demo-site.png"
-description: "Kala Search Official Website"
+description: "Kala Search Demo Site"
 ---
 
 ## Overview
-![Kala Search Demo Site](./kala-search-demo-site.png " ")
 
-This official website is built for [Kala Search](https://kalasearch.cn/) to showcase their service. Kala Search is a SaaS that offers **in-app search engine**. Without spending extra time in developing their own search engine, clients can simply set up their search feature within minutes with the help of Kala Search API and SDK.
+This is a simple demo website for [Kala Search](https://kalasearch.cn/) to demonstrate their high-speed frontend search experience. You can check the demo live [here](https://mystifying-beaver-391564.netlify.app/).
+
+> *Kala Search* is a SaaS that offers **in-app search engine**. Without spending extra time in developing their own search engine, clients can simply set up their search feature within minutes with the help of Kala Search API and SDK.
+
+![Kala Search Demo](./kala-search-demo.gif)
 
 ## Main Features
-- Compose documentaion post in [mdx](https://mdxjs.com/)
-- Write and organize documentaion with [Docz](https://www.docz.site/)
-- Display [community tutorials](https://kalasearch.cn/community) according to tag names
+- Search as you type
+- Render results with highlighted query word(s)
 
 ## Stack
-The website is built with [Gatsby](https://www.gatsbyjs.org/) from its raw default template starter. [Styled component](https://styled-components.com/) is used for the UI framework. 
+This search demo app uses [Kala Search's JavaScript SDK](https://github.com/Kalasearch/kalasearch-javascript-sdk) to make search requests through Kala Search's REST API. It is built with React and [Rebass](https://rebassjs.org/) for the UI framework. 
 
-Since Gatsby has the process of routes and pages creation taken care of, it was relatively easy to build the basic structure of the website. However, the blog post page and the community tutorials with tags page required further work to develop. After reading [Gatsby's official](https://www.gatsbyjs.com/tutorial/part-seven/) documentation and couple of useful tutorials in the community, I was able to understand the logic behind it and successfully do the job.
+>Rebass is a library of highly-composable, primitive UI components for React, built with styled-components to keep styles isolated and reduce the need to write custom CSS in your application.
 
-Keeping track of the documentation for a SaaS software is essential. I incorperated [Docz](https://www.docz.site/) into the website to help writing beautiful documentation in [mdx](https://mdxjs.com/). 
+This was also an oppotunity for me to learn and use Rebass. Movie data were pulled from [Douban movie](https://www.douban.com/).
+
+## Source Code
+[Check it out on Github](https://github.com/chrystal-lyu/douban_kalasearch)

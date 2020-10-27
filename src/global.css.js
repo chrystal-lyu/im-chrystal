@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import { accent } from 'constants/theme';
+import { accent, accent_sheer } from 'constants/theme';
 
 export default createGlobalStyle`
   html, body, div, span, applet, object, iframe,
@@ -47,8 +47,14 @@ export default createGlobalStyle`
   }
 
   blockquote {
-    border-left: 4px solid ${accent};
-    padding: 0 0 0 1.5rem;
+    border-left: 6px solid ${accent};
+    background-color: ${accent_sheer};
+    padding: 1rem 1rem 1rem 1.5rem;
+    border-radius: 8px;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
   }
 
   blockquote, q {
@@ -111,8 +117,12 @@ export default createGlobalStyle`
     font-size: 1rem;
   }
 
-  p, ol, ul, pre, table {
+  p, ol, ul, pre, table, blockquote {
     margin-bottom: 1.5rem;
     line-height: 2rem;
+  }
+
+  p img {
+    width: 100%;
   }
 `;
