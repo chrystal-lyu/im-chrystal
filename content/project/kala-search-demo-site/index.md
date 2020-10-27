@@ -15,6 +15,8 @@ This official website is built for [Kala Search](https://kalasearch.cn/) to show
 - Write and organize documentaion with [Docz](https://www.docz.site/)
 - Display [community tutorials](https://kalasearch.cn/community) according to tag names
 
+![Kala Search Demo](./kala-search-demo.gif)
+
 ## Stack
 The website is built with [Gatsby](https://www.gatsbyjs.org/) from its raw default template starter. [Styled component](https://styled-components.com/) is used for the UI framework. 
 

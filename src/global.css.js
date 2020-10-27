@@ -115,4 +115,8 @@ export default createGlobalStyle`
     margin-bottom: 1.5rem;
     line-height: 2rem;
   }
+
+  p img {
+    width: 700px;
+  }
 `;
