@@ -1,6 +1,6 @@
 ---
 title: Twitterish React
-date: "2020-04-16"
+date: "2020-09-25"
 featureImage: "./main.png"
 description: "Hello World"
 ---
