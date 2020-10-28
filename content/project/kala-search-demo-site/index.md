@@ -9,7 +9,7 @@ description: "Kala Search Demo Site"
 
 This is a simple demo website for [Kala Search](https://kalasearch.cn/) to demonstrate their high-speed frontend search experience. You can check the demo live [here](https://mystifying-beaver-391564.netlify.app/).
 
-> *Kala Search* offers powerful, fast, easy to use and deploy **in-app search engine**. Without spending extra time in developing their own search engine, users can simply set up their search feature within minutes with the help of Kala Search API and SDK.
+> **[Kala Search](https://kalasearch.cn/)** offers **powerful, fast, easy to use and deploy** in-app search engine. Without spending extra time in developing their own search engine, users can simply set up their search feature within minutes with the help of Kala Search API and SDK.
 
 ![Kala Search Demo](./kala-search-demo.gif)
 

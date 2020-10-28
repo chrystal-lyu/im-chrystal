@@ -6,9 +6,9 @@ description: "Kala Search JavaScript SDK"
 ---
 
 ## Overview
-[Kala Search JavaScript SDK](https://github.com/Kalasearch/kalasearch-javascript-sdk) is a client for [Kala Search](https://kalasearch.cn/) written in JavaScript. User can use their API Key and application ID acquried from [Kala Dashboard](https://dashboard.kalasearch.cn/) to perform various operations to customize their search engine needs.
+[Kala Search JavaScript SDK](https://github.com/Kalasearch/kalasearch-javascript-sdk) is a client for [Kala Search](https://kalasearch.cn/) written in JavaScript. User can use their API Key and application ID acquried from [Kala Search Dashboard](https://dashboard.kalasearch.cn/) to perform various operations to customize their search engine needs.
 
-> *Kala Search* offers powerful, fast, easy to use and deploy **in-app search engine**. Without spending extra time in developing their own search engine, users can simply set up their search feature within minutes with the help of Kala Search API and SDK.
+> **[Kala Search](https://kalasearch.cn/)** offers **powerful, fast, easy to use and deploy** in-app search engine. Without spending extra time in developing their own search engine, users can simply set up their search feature within minutes with the help of Kala Search API and SDK.
 
 ## Main Features
 - Basic search

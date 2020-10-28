@@ -28,14 +28,16 @@ export default createGlobalStyle`
   }
 
   html {
-    font-size: 68.75%;
+    font-size: 70%;
   }
 
   body {
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Roboto, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     line-height: 1;
     font-size: 1.6rem;
-    color: #343a40;
+    line-height: 1;
+    font-weight: 400;
+    color: #495057;
     background-color: #fff;
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
@@ -49,7 +51,7 @@ export default createGlobalStyle`
   blockquote {
     border-left: 6px solid ${accent};
     background-color: ${accent_sheer};
-    padding: 1rem 1rem 1rem 1.5rem;
+    padding: 1.5rem 1.5rem 1.5rem 2rem;
     border-radius: 8px;
 
     p:last-child {
@@ -105,6 +107,7 @@ export default createGlobalStyle`
 
   h3{
     font-size: 1.728rem;
+    margin-top: 3rem;
   }
 
   h4 {
@@ -121,7 +124,8 @@ export default createGlobalStyle`
 
   p, ol, ul, pre, table, blockquote {
     margin-bottom: 1.5rem;
-    line-height: 2rem;
+    line-height: 2.5rem;
+    font-weight: 500;
   }
 
   p img {
@@ -133,7 +137,7 @@ export default createGlobalStyle`
   pre[class*="language-"] {
     color: #ccc;
     background: none;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 400;
     font-family: Menlo, "Roboto Mono", Courier New, monospace;
     text-align: left;
