@@ -19,7 +19,8 @@ description: "Kala Search JavaScript SDK"
 
 ## Example 
 Import Kala Search JavaScript SDK and provide `appId` and `apiKey` to set up a new client:
-```
+
+```javascript
 import KalaSearch from 'kalasearch-javascript-sdk'
 
 const client = new KalaSearch({
