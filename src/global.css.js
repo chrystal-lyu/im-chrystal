@@ -79,7 +79,7 @@ export default createGlobalStyle`
   pre {
     display: block;
     padding: 1.5rem;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     overflow: auto;
     font-size: 100%;
     line-height: 1.45;
@@ -95,10 +95,12 @@ export default createGlobalStyle`
 
   h1 {
     font-size: 2.488rem;
+    margin-top: 4rem;
   } 
 
   h2 {
     font-size: 2.074rem;
+    margin-top: 4rem;
   }
 
   h3{

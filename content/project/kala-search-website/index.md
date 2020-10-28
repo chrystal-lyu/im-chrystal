@@ -8,7 +8,7 @@ description: "Kala Search Official Website"
 ## Overview
 ![Kala Search Official Website Home Page](./kala-search-website-home.png " ")
 
-This official website is built for [Kala Search](https://kalasearch.cn/) to showcase their service. Kala Search is a SaaS that offers **in-app search engine**. Without spending extra time in developing their own search engine, clients can simply set up their search feature within minutes with the help of Kala Search API and SDK.
+This official website is built for [Kala Search](https://kalasearch.cn/) to showcase their service. Kala Search offers powerful, fast, easy to use and deploy **in-app search engine**. Without spending extra time in developing their own search engine, users can simply set up their search feature within minutes with the help of Kala Search API and SDK.
 
 ## Main Features
 - Compose documentaion post in [mdx](https://mdxjs.com/)
