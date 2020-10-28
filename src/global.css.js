@@ -134,13 +134,14 @@ export default createGlobalStyle`
     color: #ccc;
     background: none;
     font-size: 1.2rem;
-    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-weight: 400;
+    font-family: Menlo, "Roboto Mono", Courier New, monospace;
     text-align: left;
     white-space: pre;
     word-spacing: normal;
     word-break: normal;
     word-wrap: normal;
-    line-height: 1.5;
+    line-height: 1.7;
 
     -moz-tab-size: 4;
     -o-tab-size: 4;
@@ -156,7 +157,7 @@ export default createGlobalStyle`
   /* Code blocks */
   pre[class*="language-"] {
     padding: 1em;
-    margin: .5em 0;
+    margin: .5em 0 2rem;
     overflow: auto;
   }
 
@@ -201,7 +202,7 @@ export default createGlobalStyle`
   .token.boolean,
   .token.number,
   .token.function {
-    color: #f08d49;
+    color: #6ab0f3;
   }
 
   .token.property,
@@ -216,7 +217,7 @@ export default createGlobalStyle`
   .token.atrule,
   .token.keyword,
   .token.builtin {
-    color: #cc99cd;
+    color: #e1a6f2;
   }
 
   .token.string,
@@ -224,7 +225,7 @@ export default createGlobalStyle`
   .token.attr-value,
   .token.regex,
   .token.variable {
-    color: #7ec699;
+    color: #92d192;
   }
 
   .token.operator,
@@ -247,5 +248,16 @@ export default createGlobalStyle`
 
   .token.inserted {
     color: green;
+  }
+
+  /* Add line highlighting styles */
+  .gatsby-highlight-code-line {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+    margin-right: -1em;
+    margin-left: -1em;
+    padding-right: 1em;
+    padding-left: 0.75em;
+    border-left: 0.25em solid #6e6f5c;
   }
 `;
