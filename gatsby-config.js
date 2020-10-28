@@ -24,20 +24,19 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              aliases:{sh: "bash", js:"javascript"},
+            },
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 800,
               showCaptions: true,
             },
           },
-          {
-            resolve: 'gatsby-transformer-remark',
-            options: {
-              plugins: [
-                'gatsby-remark-static-images'
-              ]
-            }
-          },
+          'gatsby-remark-static-images',
         ],
       },
     },

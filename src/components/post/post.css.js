@@ -8,6 +8,12 @@ export const Container = styled.div`
 export const ImageContainer = styled.div`
   display: block;
   transition: 0.3s all ease-in-out;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+
+  img {
+    border: none;
+  }
 `;
 
 export const TextContainer = styled.div`
