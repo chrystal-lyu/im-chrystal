@@ -3,10 +3,12 @@ import { Link } from 'gatsby';
 import MEDIA from 'helpers/mediaTemplates';
 
 export const Container = styled(Link)`
+  display: block;
   position: relative;
   text-decoration: none;
   border-radius: 8px;
   border: 1px solid rgba(0, 0, 0, 0.15);
+  margin-bottom: 3rem;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 
@@ -62,6 +64,6 @@ export const Copy = styled.p`
   letter-spacing: 0.02em;
 
   ${MEDIA.TABLET`
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   `};
 `;

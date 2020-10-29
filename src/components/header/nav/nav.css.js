@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import MEDIA from 'helpers/mediaTemplates';
 
 export const Container = styled.nav`
   ul {
@@ -13,6 +14,10 @@ export const Container = styled.nav`
 
       & + li {
         margin-left: 2rem;
+
+        ${MEDIA.TABLET`
+          margin-left: 1rem;
+        `};
       }
     }
   }
