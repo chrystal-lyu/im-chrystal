@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
+import Head from 'components/head';
 import Box from 'components/box';
 import PostHeader from 'components/post-header';
 
@@ -11,6 +12,7 @@ const BlogPostTemplate = ({ data }) => {
 
   return (
     <Layout>
+      <Head pageTitle={post.frontmatter.title} siteDescription={post.excerpt} />
       <Box>
         <article
           className="blog-post"
