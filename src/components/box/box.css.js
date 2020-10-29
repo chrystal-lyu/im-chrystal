@@ -1,8 +1,13 @@
 import styled from 'styled-components';
+import MEDIA from 'helpers/mediaTemplates';
 
 export const Container = styled.div`
   padding: 2rem 4rem;
   max-width: 700px;
+
+  ${MEDIA.TABLET`
+    padding: 1rem 2rem;
+  `};
 
   img {
     border-radius: 8px;

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { accent } from '../../constants/theme';
 
 export const Container = styled.header`
   h3 {
