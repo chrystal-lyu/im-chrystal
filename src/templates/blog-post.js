@@ -19,10 +19,7 @@ const BlogPostTemplate = ({ data }) => {
           itemScope
           itemType="http://schema.org/Article"
         >
-          <PostHeader
-            title={post.frontmatter.title}
-            date={post.frontmatter.date}
-          />
+          <PostHeader title={post.frontmatter.title} />
           <section
             dangerouslySetInnerHTML={{ __html: post.html }}
             itemProp="articleBody"
